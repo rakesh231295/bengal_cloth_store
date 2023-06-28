@@ -1,24 +1,87 @@
 function Footer(){
     return(
-        <footer className="bg-white shadow dark:bg-gray-800">
-        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" className="hover:underline">Bengal Cloth Store</a>. All Rights Reserved.
-        </span>
-        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
-                <a href="#" className="mr-4 hover:underline md:mr-6 ">About</a>
-            </li>
-            <li>
-                <a href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-            </li>
-            <li>
-                <a href="#" className="mr-4 hover:underline md:mr-6">Licensing</a>
-            </li>
-            <li>
-                <a href="#" className="hover:underline">Contact</a>
-            </li>
-        </ul>
+        
+		<footer id="footer">
+			
+        <div className="section">
+            
+            <div className="container">
+                
+                <div className="row">
+                    <div className="col-md-3 col-xs-6">
+                        <div className="footer">
+                            <h3 className="footer-title">About Us</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                            <ul className="footer-links">
+                                <li><a href="#"><i className="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+                                <li><a href="#"><i className="fa fa-phone"></i>+021-95-51-84</a></li>
+                                <li><a href="#"><i className="fa fa-envelope-o"></i>email@email.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-md-3 col-xs-6">
+                        <div className="footer">
+                            <h3 className="footer-title">Categories</h3>
+                            <ul className="footer-links">
+                                <li><a href="#">Hot deals</a></li>
+                                <li><a href="#">Laptops</a></li>
+                                <li><a href="#">Smartphones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="clearfix visible-xs"></div>
+
+                    <div className="col-md-3 col-xs-6">
+                        <div className="footer">
+                            <h3 className="footer-title">Information</h3>
+                            <ul className="footer-links">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Orders and Returns</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-md-3 col-xs-6">
+                        <div className="footer">
+                            <h3 className="footer-title">Service</h3>
+                            <ul className="footer-links">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">View Cart</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Track My Order</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
         </div>
+        
+        <div id="bottom-footer" className="section">
+            <div className="container">
+                
+                <div className="row">
+                    <div className="col-md-12 text-center">
+                        
+                        <span className="">
+                             <a target="_blank" href="#" style={{color:"#fff"}}>© 2023 Bengal Cloth Store. All Right Reserved.</a>
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
     </footer>
     )
 

@@ -1,67 +1,143 @@
 
 function Header(){
     return(
-        <header className="bg-white">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-            </a>
-          </div>
-          <div className="flex lg:hidden">
-            <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-              <span className="sr-only">Open main menu</span>
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-           
-            
-             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Home</a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Product</a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Nearby</a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Contact</a>
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </nav>
-       
-        <div className="lg:hidden" role="dialog" aria-modal="true">
+      <>
+      <header>
+			
+			<div id="top-header">
+				<div className="container">
+					<ul className="header-links pull-left">
+						<li><a href="#"><i className="fa fa-phone"></i> +021-95-51-84</a></li>
+						<li><a href="#"><i className="fa fa-envelope-o"></i> email@email.com</a></li>
+						<li><a href="#"><i className="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+					</ul>
+					<ul className="header-links pull-right">
+						<li><a href="#"><i className="fa fa-dollar"></i> USD</a></li>
+						<li><a href="#"><i className="fa fa-user-o"></i> My Account</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="header">
+				
+				<div className="container">
+					
+					<div className="row">
+					
+						<div className="col-md-3">
+							<div className="header-logo">
+								<a href="#" className="logo">
+									<img src="./img/logo.png" alt="" />
+								</a>
+							</div>
+						</div>
+						
+						<div className="col-md-6">
+							<div className="header-search">
+								<form>
+									<select className="input-select">
+										<option value="0">All Categories</option>
+										<option value="1">Category 01</option>
+										<option value="1">Category 02</option>
+									</select>
+									<input className="input" placeholder="Search here" />
+									<button className="search-btn">Search</button>
+								</form>
+							</div>
+						</div>
+						
+						<div className="col-md-3 clearfix">
+							<div className="header-ctn">
+								
+								<div>
+									<a href="#">
+										<i className="fa fa-heart-o"></i>
+										<span>Your Wishlist</span>
+										<div className="qty">2</div>
+									</a>
+								</div>
+								
+								<div className="dropdown">
+									<a className="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<i className="fa fa-shopping-cart"></i>
+										<span>Your Cart</span>
+										<div className="qty">3</div>
+									</a>
+									<div className="cart-dropdown">
+										<div className="cart-list">
+											<div className="product-widget">
+												<div className="product-img">
+													<img src="./img/product01.png" alt="" />
+												</div>
+												<div className="product-body">
+													<h3 className="product-name"><a href="#">product name goes here</a></h3>
+													<h4 className="product-price"><span className="qty">1x</span>$980.00</h4>
+												</div>
+												<button className="delete"><i className="fa fa-close"></i></button>
+											</div>
+
+											<div className="product-widget">
+												<div className="product-img">
+													<img src="./img/product02.png" alt="" />
+												</div>
+												<div className="product-body">
+													<h3 className="product-name"><a href="#">product name goes here</a></h3>
+													<h4 className="product-price"><span className="qty">3x</span>$980.00</h4>
+												</div>
+												<button className="delete"><i className="fa fa-close"></i></button>
+											</div>
+										</div>
+										<div className="cart-summary">
+											<small>3 Item(s) selected</small>
+											<h5>SUBTOTAL: $2940.00</h5>
+										</div>
+										<div className="cart-btns">
+											<a href="#">View Cart</a>
+											<a href="#">Checkout  <i className="fa fa-arrow-circle-right"></i></a>
+										</div>
+									</div>
+								</div>
+								
+								<div className="menu-toggle">
+									<a href="#">
+										<i className="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</header>
+    
+		<nav id="navigation">
+			
+    <div className="container">
+      
+      <div id="responsive-nav">
         
-          <div className="fixed inset-0 z-10"></div>
-          <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-              </a>
-              <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
-                <span className="sr-only">Close menu</span>
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                 
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
-                </div>
-                <div className="py-6">
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+        <ul className="main-nav nav navbar-nav">
+          <li className="active"><a href="#">Home</a></li>
+          <li><a href="#">Hot Deals</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Laptops</a></li>
+          <li><a href="#">Smartphones</a></li>
+          <li><a href="#">Cameras</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+        
+      </div>
+      
+    </div>
+    
+  </nav>
+  </>
     )
 }
 export default Header;
