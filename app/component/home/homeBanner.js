@@ -198,43 +198,31 @@ function homeBanner(){
 		</div>
 		
 
-		
-		<div id="hot-deal" className="section">
+		<div id="newsletter" className="section">
 			
 			<div className="container">
-				
 				<div className="row">
 					<div className="col-md-12">
-						<div className="hot-deal">
-							<ul className="hot-deal-countdown">
+						<div className="newsletter">
+							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
+							<form>
+								<input className="input" type="email" placeholder="Enter Your Email" />
+								<button className="newsletter-btn"><i className="fa fa-envelope"></i> Subscribe</button>
+							</form>
+							<ul className="newsletter-follow">
 								<li>
-									<div>
-										<h3>02</h3>
-										<span>Days</span>
-									</div>
+									<a href="#"><i className="fa fa-facebook"></i></a>
 								</li>
 								<li>
-									<div>
-										<h3>10</h3>
-										<span>Hours</span>
-									</div>
+									<a href="#"><i className="fa fa-twitter"></i></a>
 								</li>
 								<li>
-									<div>
-										<h3>34</h3>
-										<span>Mins</span>
-									</div>
+									<a href="#"><i className="fa fa-instagram"></i></a>
 								</li>
 								<li>
-									<div>
-										<h3>60</h3>
-										<span>Secs</span>
-									</div>
+									<a href="#"><i className="fa fa-pinterest"></i></a>
 								</li>
 							</ul>
-							<h2 className="text-uppercase">hot deal this week</h2>
-							<p>New Collection Up to 50% OFF</p>
-							<a className="primary-btn cta-btn" href="#">Shop now</a>
 						</div>
 					</div>
 				</div>

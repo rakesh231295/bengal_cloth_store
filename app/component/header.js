@@ -1,4 +1,5 @@
-
+import Image from 'next/image';
+import logo from './img/logo.jpeg';
 function Header(){
     return(
       <>
@@ -12,7 +13,7 @@ function Header(){
 						<li><a href="#"><i className="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
 					</ul>
 					<ul className="header-links pull-right">
-						<li><a href="#"><i className="fa fa-dollar"></i> USD</a></li>
+						
 						<li><a href="#"><i className="fa fa-user-o"></i> My Account</a></li>
 					</ul>
 				</div>
@@ -27,7 +28,7 @@ function Header(){
 						<div className="col-md-3">
 							<div className="header-logo">
 								<a href="#" className="logo">
-									<img src="./img/logo.png" alt="" />
+									<Image src={logo} alt="" width={100} />
 								</a>
 							</div>
 						</div>
@@ -124,12 +125,10 @@ function Header(){
         
         <ul className="main-nav nav navbar-nav">
           <li className="active"><a href="#">Home</a></li>
-          <li><a href="#">Hot Deals</a></li>
-          <li><a href="#">Categories</a></li>
-          <li><a href="#">Laptops</a></li>
-          <li><a href="#">Smartphones</a></li>
-          <li><a href="#">Cameras</a></li>
-          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Nearby Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          
         </ul>
         
       </div>

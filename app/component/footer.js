@@ -66,7 +66,7 @@ function Footer(){
             
         </div>
         
-        <div id="bottom-footer" className="section">
+        <div id="bottom-footer">
             <div className="container">
                 
                 <div className="row">
