@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link'
 import logo from './img/logo.jpeg';
 function Header(){
     return(
@@ -122,6 +123,7 @@ function Header(){
         <ul className="main-nav nav navbar-nav">
           <li className="active"><a href="#">Home</a></li>
           <li><a href="#">Nearby Shop</a></li>
+		  <li><Link href="./home/shopList">ShopList</Link></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           
