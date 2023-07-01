@@ -37,7 +37,7 @@ function Header(){
 							<div className="header-search">
 								<form>
 									
-									<input className="input" placeholder="Search here" style={{borderRadius: 26px 0px 0px 26px;}} />
+									<input className="input" placeholder="Search here" style={{ borderRadius: '26px 0px 0px 26px' }} />
 									<button className="search-btn">Search</button>
 								</form>
 							</div>

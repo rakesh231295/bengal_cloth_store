@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import mypic from '../img/product01.png';
+import mypic from '../img/shop.png';
 import shop1 from '../img/shop01.png';
 import shop2 from '../img/shop02.png';
 import shop3 from '../img/shop03.png';
@@ -20,7 +20,7 @@ function homeBanner(){
 								<Image src={shop1} alt="shop" />
 							</div>
 							<div className="shop-body">
-								<h3>Laptop<br />Collection</h3>
+								<h3>Shop<br />Collection</h3>
 								<a href="#" className="cta-btn">Shop now <i className="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
@@ -34,7 +34,7 @@ function homeBanner(){
                             <Image src={shop2} alt="shop" />
 							</div>
 							<div className="shop-body">
-								<h3>Accessories<br />Collection</h3>
+								<h3>Shop<br />Collection</h3>
 								<a href="#" className="cta-btn">Shop now <i className="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
@@ -48,7 +48,7 @@ function homeBanner(){
                             <Image src={shop3} alt="shop" />
 							</div>
 							<div className="shop-body">
-								<h3>Cameras<br />Collection</h3>
+								<h3>Shop<br />Collection</h3>
 								<a href="#" className="cta-btn">Shop now <i className="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
@@ -71,7 +71,7 @@ function homeBanner(){
 					
 					<div className="col-md-12">
 						<div className="section-title">
-							<h3 className="title">New Products</h3>
+							<h3 className="title">Shops</h3>
 							
 						</div>
 					</div>
@@ -85,7 +85,7 @@ function homeBanner(){
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
-                                        <h3 className="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
                                         <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
                                         
                                     </div>
@@ -99,7 +99,7 @@ function homeBanner(){
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
-                                        <h3 className="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
                                         <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
                                         
                                     </div>
@@ -113,7 +113,7 @@ function homeBanner(){
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
-                                        <h3 className="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
                                         <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
                                         
                                     </div>
@@ -127,7 +127,7 @@ function homeBanner(){
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
-                                        <h3 className="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
                                         <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
                                         
                                     </div>
@@ -141,7 +141,7 @@ function homeBanner(){
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
-                                        <h3 className="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
                                         <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
                                         
                                     </div>
@@ -155,7 +155,7 @@ function homeBanner(){
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
-                                        <h3 className="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
                                         <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
                                         
                                     </div>
@@ -169,7 +169,7 @@ function homeBanner(){
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
-                                        <h3 className="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
                                         <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
                                         
                                     </div>
@@ -183,7 +183,7 @@ function homeBanner(){
                                     </div>
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
-                                        <h3 className="product-name"><a href="#">product name goes here</a></h3>
+                                        <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
                                         <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
                                         
                                     </div>
