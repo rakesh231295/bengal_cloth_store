@@ -1,10 +1,33 @@
 import Image from 'next/image'
-import mypic from '../img/shop.png';
-import shop1 from '../img/shop01.png';
-import shop2 from '../img/shop02.png';
-import shop3 from '../img/shop03.png';
+import mypic from '../../component/img/shop.png';
+import shop1 from '../../component/img/shop01.png';
+import shop2 from '../../component/img/shop02.png';
+import shop3 from '../../component/img/shop03.png';
 
-function homeBanner(){
+import { useEffect } from 'react';
+
+function HomeBanner(){
+    useEffect(() => {
+        const fetchLocation = () => {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+              (position) => {
+                const { latitude, longitude } = position.coords;
+                console.log('Latitude:', latitude);
+                console.log('Longitude:', longitude);
+                // Do something with the location data
+              },
+              (error) => {
+                console.error('Error fetching location:', error);
+              }
+            );
+          } else {
+            console.error('Geolocation is not supported by this browser.');
+          }
+        };
+    
+        fetchLocation();
+      }, []);
     return(
         <>
        
@@ -86,7 +109,7 @@ function homeBanner(){
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
                                         <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
-                                        <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+                                       
                                         
                                     </div>
                                 </div>
@@ -100,7 +123,7 @@ function homeBanner(){
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
                                         <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
-                                        <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+                                       
                                         
                                     </div>
                                 </div>
@@ -114,7 +137,7 @@ function homeBanner(){
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
                                         <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
-                                        <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+                                       
                                         
                                     </div>
                                 </div>
@@ -128,7 +151,7 @@ function homeBanner(){
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
                                         <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
-                                        <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+                                       
                                         
                                     </div>
                                 </div>
@@ -142,7 +165,7 @@ function homeBanner(){
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
                                         <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
-                                        <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+                                       
                                         
                                     </div>
                                 </div>
@@ -156,7 +179,7 @@ function homeBanner(){
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
                                         <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
-                                        <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+                                       
                                         
                                     </div>
                                 </div>
@@ -170,7 +193,7 @@ function homeBanner(){
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
                                         <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
-                                        <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+                                       
                                         
                                     </div>
                                 </div>
@@ -184,7 +207,7 @@ function homeBanner(){
                                     <div className="product-body">
                                         <p className="product-category">Category</p>
                                         <h3 className="product-name"><a href="#">Bengal Shop</a></h3>
-                                        <h4 className="product-price">$980.00 <del className="product-old-price">$990.00</del></h4>
+                                       
                                         
                                     </div>
                                 </div>
@@ -234,4 +257,4 @@ function homeBanner(){
     </>
     )
 }
-export default homeBanner;
+export default HomeBanner;

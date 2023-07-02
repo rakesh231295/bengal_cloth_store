@@ -47,13 +47,13 @@ function Header(){
 						<div className="col-md-3 clearfix">
 							<div className="header-ctn">
 								
-								<div>
+								{/* <div>
 									<a href="#">
 										<i className="fa fa-heart-o"></i>
 										<span>Your Wishlist</span>
 										<div className="qty">2</div>
 									</a>
-								</div>
+								</div> */}
 								
 								<div className="dropdown">
 									<a className="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
@@ -123,7 +123,7 @@ function Header(){
         <ul className="main-nav nav navbar-nav">
           <li className="active"><a href="#">Home</a></li>
           <li><a href="#">Nearby Shop</a></li>
-		  <li><Link href="./home/shopList">ShopList</Link></li>
+		  <li><Link href="/frontend/shoplist/page">ShopList</Link></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           
