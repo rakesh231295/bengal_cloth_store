@@ -123,7 +123,8 @@ function Header(){
         <ul className="main-nav nav navbar-nav">
           <li className="active"><a href="#">Home</a></li>
           <li><a href="#">Nearby Shop</a></li>
-		  <li><Link href="/frontend/shoplist/page">ShopList</Link></li>
+		  <li><Link href="/frontend/shoplist">ShopList</Link></li>
+		  <li><Link href="/frontend/productdetail">Product Detail</Link></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           

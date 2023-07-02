@@ -4,30 +4,7 @@ import shop1 from '../../component/img/shop01.png';
 import shop2 from '../../component/img/shop02.png';
 import shop3 from '../../component/img/shop03.png';
 
-import { useEffect } from 'react';
-
 function HomeBanner(){
-    useEffect(() => {
-        const fetchLocation = () => {
-          if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-              (position) => {
-                const { latitude, longitude } = position.coords;
-                console.log('Latitude:', latitude);
-                console.log('Longitude:', longitude);
-                // Do something with the location data
-              },
-              (error) => {
-                console.error('Error fetching location:', error);
-              }
-            );
-          } else {
-            console.error('Geolocation is not supported by this browser.');
-          }
-        };
-    
-        fetchLocation();
-      }, []);
     return(
         <>
        
