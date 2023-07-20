@@ -98,7 +98,14 @@ function HomeBanner() {
                     <div className="col-md-3">
                       <div className="product">
                         <div className="product-img">
-                          <img src={item?.thumbnail} alt="" width={} />
+                        <style jsx>{`
+                            .imagesize {
+                            
+                            height: 200px!important;
+                            }
+                            
+                        `}</style>
+                          <img src={item?.thumbnail} alt="" className="imagesize" />
                         </div>
                         <div className="product-body">
                           <p className="product-category">Category</p>
