@@ -122,9 +122,7 @@ const Registration = () => {
                   <button type="submit">Submit</button>
                 </form>
               </div>
-              <div className="order-notes">
-                <textarea className="input" placeholder="Order Notes"></textarea>
-              </div>
+              
             </div>
           </div>
         </div>
