@@ -2,10 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "./img/logo.jpeg";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 // import Location from "./location";
 
 function Header() {
+// localstorage
+
+
+
+
   const getLocation = () => {
     var $locationText = document.querySelector(".location");
 
@@ -217,11 +222,15 @@ function Header() {
                 <Link href="/frontend/registration">Registration</Link>
               </li>
               <li>
+                <Link href="/frontend/users">Users</Link>
+              </li>
+              <li>
                 <a href="#">About</a>
               </li>
               <li>
                 <a href="#">Contact</a>
               </li>
+              
             </ul>
           </div>
         </div>

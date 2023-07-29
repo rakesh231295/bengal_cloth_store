@@ -1,5 +1,8 @@
 "use client"
+import Header from "@/app/component/header";
+import Footer from "@/app/component/footer";
 import React, { useState } from "react";
+import axios from 'axios';
 
 const Registration = () => {
   const [formData, setFormData] = useState({
@@ -23,30 +26,30 @@ const Registration = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("formdara>>>>>>>>",formData);
     try {
-      const response = await fetch('http://bengalcloth.woodmart.shop/api/buyerRegister', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      const data = await response.json();
-      console.log(data); // Do something with the response from the API
+      const response = await axios.post('http://bengalcloth.woodmart.shop/api/buyerRegister', formData);
+      console.log(response.data); 
     } catch (error) {
       console.error('Error sending form data:', error);
     }
   };
 
+  
+
   return (
+    <>
+    <Header/>
     <div>
+      
       <div className="section">
         <div className="container">
           <div className="row">
-            <div className="col-md-7">
+          <div className="col-md-2"></div>
+            <div className="col-md-8">
               <div className="billing-details">
                 <div className="section-title">
-                  <h3 className="title">Billing address</h3>
+                  <h3 className="title">Registration</h3>
                 </div>
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
@@ -128,6 +131,8 @@ const Registration = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
