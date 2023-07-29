@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 function Header() {
   const getLocation = () => {
-	var $locationText = document.querySelector('.location');
+    var $locationText = document.querySelector(".location");
 
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -21,11 +21,13 @@ function Header() {
 
     function geoLocationSuccess(pos) {
       var myLat = pos.coords.latitude;
+      console.log(myLat);
       var myLng = pos.coords.longitude;
+      console.log(myLng);
       var loadingTimeout;
 
       var loading = function () {
-        $locationText.textContent = 'fetching...';
+        $locationText.textContent = "fetching...";
       };
 
       loadingTimeout = setTimeout(loading, 600);
@@ -48,13 +50,13 @@ function Header() {
 
     function geoLocationError(error) {
       var errors = {
-        1: 'Permission denied',
-        2: 'Position unavailable',
-        3: 'Request timeout',
+        1: "Permission denied",
+        2: "Position unavailable",
+        3: "Request timeout",
       };
 
       // Handle the case where permission is denied
-      $locationText.textContent = 'Permission denied';
+      $locationText.textContent = "Permission denied";
     }
   };
 
@@ -65,19 +67,17 @@ function Header() {
   return (
     <>
       {/* <Location /> */}
-      
+
       <header>
         <div id="top-header">
           <div className="container">
             <ul className="header-links pull-left">
-			<li>
-			
-              </li>
-              
-              
+              <li></li>
+
               <li>
                 <a href="#">
-                  <i className="fa fa-map-marker"></i> <span className="location"></span>
+                  <i className="fa fa-map-marker"></i>{" "}
+                  <span className="location"></span>
                 </a>
               </li>
             </ul>
@@ -212,6 +212,9 @@ function Header() {
               </li>
               <li>
                 <Link href="/frontend/productdetail">Product Detail</Link>
+              </li>
+              <li>
+                <Link href="/frontend/registration">Registration</Link>
               </li>
               <li>
                 <a href="#">About</a>

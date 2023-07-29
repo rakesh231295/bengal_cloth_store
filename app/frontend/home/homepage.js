@@ -98,13 +98,14 @@ function HomeBanner() {
                     <div className="col-md-3">
                       <div className="product">
                         <div className="product-img">
-                        <style jsx>{`
-                            .imagesize {
-                            
-                            height: 200px!important;
-                            }
-                            
-                        `}</style>
+                          <style jsx>
+                            {`
+                              .imagesize {
+                                height: 200px!important;
+                              }
+                              
+                            `}
+                          </style>
                           <img src={item?.thumbnail} alt="" className="imagesize" />
                         </div>
                         <div className="product-body">
