@@ -5,6 +5,11 @@ import React, { useState } from "react";
 import axios from 'axios';
 
 const Registration = () => {
+
+  const api = axios.create({
+    baseURL: "https://localhost:3000"
+  });
+
   const [post, setPost] = useState({
     // Your form fields and initial values here
     name: '',
