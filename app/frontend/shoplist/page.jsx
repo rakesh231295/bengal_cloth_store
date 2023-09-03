@@ -61,6 +61,7 @@ function ShopList() {
               </div> */}
 
               <div className="row">
+                
                 <div className="col-md-6 col-xs-6 mt-2 mb-4">
                   <div className="category-card">
                     <div className="product-widget">
@@ -70,7 +71,7 @@ function ShopList() {
                       <div className="product-body">
                         <p className="product-category">Category</p>
                         <h3 className="product-name">
-                          <a href="#">product name goes here</a>
+                          <a href="./productdetail">product name goes here</a>
                         </h3>
                         <h4 className="product-price">
                           $980.00{" "}
@@ -86,7 +87,7 @@ function ShopList() {
                     </div>
                   </div>
                 </div>
-
+                
                 <div className="col-md-6 col-xs-6 mt-2 mb-4">
                   <div className="category-card">
                     <div className="product-widget">

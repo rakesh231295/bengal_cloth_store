@@ -101,7 +101,7 @@ function Header() {
             <div className="row">
               <div className="col-md-3">
                 <div className="header-logo">
-                  <a href="#" className="logo">
+                  <a href="../" className="logo">
                     <Image src={logo} alt="" width={100} />
                   </a>
                 </div>
@@ -207,17 +207,17 @@ function Header() {
           <div id="responsive-nav">
             <ul className="main-nav nav navbar-nav">
               <li className="active">
-                <a href="#">Home</a>
+                <a href="../">Home</a>
               </li>
               <li>
                 <a href="#">Nearby Shop</a>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/frontend/shoplist">ShopList</Link>
               </li>
               <li>
                 <Link href="/frontend/productdetail">Product Detail</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/frontend/registration">Registration</Link>
               </li>

@@ -95,6 +95,7 @@ function HomeBanner() {
               <div className="row">
                 {product?.map((item) => (
                   <>
+                  <a href="./frontend/shoplist">
                     <div className="col-md-3">
                       <div className="product">
                         <div className="product-img">
@@ -116,6 +117,7 @@ function HomeBanner() {
                         </div>
                       </div>
                     </div>
+                    </a>
                   </>
                 ))}
               </div>

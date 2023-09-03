@@ -11,7 +11,7 @@ function Page() {
     let data = await fetch("http://bengalcloth.woodmart.shop/api/all_user");
     data = await data.json();
     console.log(data);
-    setUser(data.all_user);
+    setUser(data);
   }
   useEffect(() => {
     fetchData();
