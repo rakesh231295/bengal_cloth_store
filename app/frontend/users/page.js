@@ -8,7 +8,7 @@ function Page() {
     const [user, setUser] = useState([]);
   async function fetchData() {
     // You can await here
-    let data = await fetch("http://bengalcloth.woodmart.shop/api/all_user");
+    var data = await fetch("http://bengalcloth.woodmart.shop/api/all_user");
     data = await data.json();
     console.log(data);
     setUser(data);

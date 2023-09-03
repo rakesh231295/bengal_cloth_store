@@ -5,7 +5,12 @@ import React, { useState } from "react";
 import axios from 'axios';
 
 const Registration = () => {
-  const [formData, setFormData] = useState({
+
+  const api = axios.create({
+    baseURL: "https://localhost:3000"
+  });
+
+  const [post, setPost] = useState({
     // Your form fields and initial values here
     name: '',
     email: '',
@@ -13,27 +18,22 @@ const Registration = () => {
     address: '',
     password: '',
     log_latitude: '',
-    log_longitude: '',
+    log_longitude: ''
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  
+  const handleInput = (event) => {
+    setPost({...post, [event.target.name]: event.target.value})
+  }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log("formdara>>>>>>>>",formData);
-    try {
-      const response = await axios.post('http://bengalcloth.woodmart.shop/api/buyerRegister', formData);
-      console.log(response.data); 
-    } catch (error) {
-      console.error('Error sending form data:', error);
-    }
-  };
+  function handleSubmit(event) {
+    event.preventDefault()
+    // console.log(post)
+    axios.post('http://bengalcloth.woodmart.shop/api/buyerRegister', {post})
+    .then(response => console.log(response))
+    .catch(err => console.log(err))
+  }
+  
 
   
 
@@ -57,8 +57,8 @@ const Registration = () => {
                       className="input"
                       type="text"
                       name="name"
-                      value={formData.name}
-                      onChange={handleChange}
+                      value={post.name}
+                      onChange={handleInput}
                       placeholder="Name"
                     />
                   </div>
@@ -67,8 +67,8 @@ const Registration = () => {
                       className="input"
                       type="text"
                       name="email"
-                      value={formData.email}
-                      onChange={handleChange}
+                      value={post.email}
+                      onChange={handleInput}
                       placeholder="Email ID"
                     />
                   </div>
@@ -77,8 +77,8 @@ const Registration = () => {
                       className="input"
                       type="text"
                       name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
+                      value={post.phone}
+                      onChange={handleInput}
                       placeholder="Phone Number"
                     />
                   </div>
@@ -87,8 +87,8 @@ const Registration = () => {
                       className="input"
                       type="text"
                       name="address"
-                      value={formData.address}
-                      onChange={handleChange}
+                      value={post.address}
+                      onChange={handleInput}
                       placeholder="Address"
                     />
                   </div>
@@ -97,8 +97,8 @@ const Registration = () => {
                       className="input"
                       type="password"
                       name="password"
-                      value={formData.password}
-                      onChange={handleChange}
+                      value={post.password}
+                      onChange={handleInput}
                       placeholder="Password"
                     />
                   </div>
@@ -107,8 +107,8 @@ const Registration = () => {
                       className="input"
                       type="text"
                       name="log_latitude"
-                      value={formData.log_latitude}
-                      onChange={handleChange}
+                      value={post.log_latitude}
+                      onChange={handleInput}
                       placeholder="log_latitude"
                     />
                   </div>
@@ -117,8 +117,8 @@ const Registration = () => {
                       className="input"
                       type="text"
                       name="log_longitude"
-                      value={formData.log_longitude}
-                      onChange={handleChange}
+                      value={post.log_longitude}
+                      onChange={handleInput}
                       placeholder="log_longitude"
                     />
                   </div>
